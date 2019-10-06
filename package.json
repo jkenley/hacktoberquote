@@ -1,6 +1,8 @@
 {
   "name": "hacktoberquote",
   "version": "1.0.0",
+  "homepage": "https://hacktoberquote.com",
+  "repository": "https://github.com/bedjiken/hacktoberquote.git",
   "description": "Open source programming quotes.",
   "main": "pages/index.tsx",
   "author": {
