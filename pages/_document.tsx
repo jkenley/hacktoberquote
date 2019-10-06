@@ -1,12 +1,15 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { NextPageContext } from "next";
+import { DocumentContext } from "next";
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx: NextPageContext) {
+  static async getInitialProps(ctx: DocumentContext) {
+    const { renderPage } = ctx;
+
     const isProduction = process.env.NODE_ENV === "production";
     const initialProps = await Document.getInitialProps(ctx);
+    const page = renderPage((App: any) => (props: any) => <App {...props} />);
 
-    return { ...initialProps, isProduction };
+    return { ...initialProps, isProduction, page };
   }
 
   setGoogleTags() {
