@@ -123,12 +123,12 @@ footer p {
 
 footer a {
     color: #99a1b3;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 footer a:hover {
     color: #fff922;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 

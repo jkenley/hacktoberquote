@@ -33,13 +33,11 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <>
-            <script
-              async
-              src="https://www.googletagmanager.com/gtag/js?id=UA-149489768-1"
-            />
-            <script dangerouslySetInnerHTML={this.setGoogleTags()} />
-          </>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-149489768-1"
+          />
+          <script dangerouslySetInnerHTML={this.setGoogleTags()} />
         </body>
       </Html>
     );

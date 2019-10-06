@@ -46,7 +46,7 @@ const Home: NextPage = (): JSX.Element => {
       </div>
       <footer>
         <p>
-          Developed with {"<3"} by{" "}
+          Developed with ❤️ by{" "}
           <a href="https://jkenley.me/" target="_blank">
             Kenley Jean
           </a>
