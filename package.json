@@ -1,0 +1,34 @@
+{
+  "name": "hacktoberquote",
+  "version": "1.0.0",
+  "description": "Open source programming quotes.",
+  "main": "pages/index.tsx",
+  "author": {
+    "name": "Kenley Jean",
+    "email": "kenley.jean@esih.edu",
+    "url": "https://jkenley.me"
+  },
+  "keywords": [
+    "open source",
+    "programming quotes",
+    "hacktoberfest",
+    "hacktoberquote"
+  ],
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.0.7",
+    "next-seo": "^2.1.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.11",
+    "@types/react": "^16.9.5",
+    "typescript": "^3.6.3"
+  },
+  "license": "MIT"
+}

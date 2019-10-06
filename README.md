@@ -1,0 +1,1 @@
+# Open source programming quotes.

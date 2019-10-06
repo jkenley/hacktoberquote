@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+<font id="icofont" horiz-adv-x="1000" >
+<font-face font-family="IcoFont" font-weight="400" font-style="Regular" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="refresh" horiz-adv-x="1000" unicode="&#xefd1;" d="M900 295h-42c-19 0-37-15-42-33-38-138-165-240-316-240-103 0-195 47-255 122-12 14-9 38 5 50l85 78c14 13 10 23-9 23h-229c-19 0-34-15-34-34v-205c0-19 11-24 25-11l30 28c14 13 34 11 46-4 81-96 201-157 336-157 211 0 388 151 428 350 4 18-9 33-28 33z m13 359l-30-30c-13-13-32-11-44 3-81 98-203 161-339 161-211 0-388-150-428-350-4-18 9-33 28-33h42c19 0 37 15 42 33 38 139 165 240 316 240 106 0 201-50 261-129 12-15 8-39-5-52l-68-68c-13-14-9-24 10-24h205c19 0 35 15 35 34v205c0 19-11 23-25 10z" />
+</font>
+</defs>
+</svg>
