@@ -36,7 +36,7 @@ export default class MyDocument extends Document {
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-149489768-1"
-          />
+          ></script>
           <script dangerouslySetInnerHTML={this.setGoogleTags()} />
         </body>
       </Html>
