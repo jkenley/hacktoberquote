@@ -89,6 +89,11 @@ export const quotes = [
   },
   {
     text:
+      "If you want to go fast, go alone. If you want to go far, go together.",
+    people: "African Proverb"
+  },
+  {
+    text:
       "Coming together is a beginning, staying together is progress, and working together is success.",
     people: "Henry Ford"
   },

@@ -1,33 +1,28 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { NextPageContext } from "next";
 
-interface Props {
-  locale: "en-US";
-}
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx: NextPageContext) {
+    const isProduction = process.env.NODE_ENV === "production";
+    const initialProps = await Document.getInitialProps(ctx);
 
-export default class MyDocument extends Document<Props> {
-  //   static async getInitialProps(ctx) {
-  //     const isProduction = process.env.NODE_ENV === "production";
-  //     const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps, isProduction };
+  }
 
-  //     return { ...initialProps, isProduction };
-  //   }
-
-  //   setGoogleTags() {
-  //     return {
-  //       __html: `
-  //         window.dataLayer = window.dataLayer || [];
-  //         function gtag(){dataLayer.push(arguments);}
-  //         gtag('js', new Date());
-  //         gtag('config', 'UA-146292506-1');
-  //       `
-  //     };
-  //   }
+  setGoogleTags() {
+    return {
+      __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-149489768-1');
+        `
+    };
+  }
 
   render() {
-    // const { isProduction } = this.props;
-
     return (
-      <Html lang={this.props.locale}>
+      <Html lang="en-US">
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -35,6 +30,7 @@ export default class MyDocument extends Document<Props> {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <link rel="shortcut icon" href="/static/images/icon-48x48.png" />
           <link
             href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap"
             rel="stylesheet"
@@ -45,13 +41,13 @@ export default class MyDocument extends Document<Props> {
         <body>
           <Main />
           <NextScript />
-          {false && (
+          {this.props.isProduction && (
             <>
               <script
                 async
-                src="https://www.googletagmanager.com/gtag/js?id="
+                src="https://www.googletagmanager.com/gtag/js?id=UA-149489768-1"
               />
-              {/* <script dangerouslySetInnerHTML={this.setGoogleTags()} /> */}
+              <script dangerouslySetInnerHTML={this.setGoogleTags()} />
             </>
           )}
         </body>

@@ -44,6 +44,14 @@ const Home: NextPage = (): JSX.Element => {
           </div>
         </div>
       </div>
+      <footer>
+        <p>
+          Developed with {"<3"} by{" "}
+          <a href="https://jkenley.me/" target="_blank">
+            Kenley Jean
+          </a>
+        </p>
+      </footer>
     </>
   );
 };

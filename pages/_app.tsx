@@ -1,29 +1,21 @@
 import React from "react";
 import App from "next/app";
 import { DefaultSeo } from "next-seo";
-// import Router from "next/router";
-// import { trackPageView } from "../helpers";
 
 export default class MyApp extends App {
-  //   componentDidMount() {
-  //     Router.onRouteChangeComplete = url => {
-  //       trackPageView(url);
-  //     };
-  //   }
-
   render() {
     const { Component } = this.props;
 
     return (
       <>
         <DefaultSeo
-          title="Hacktoberquote"
+          title="Hacktoberquote - Open source programming quotes"
           description="Open source programming quotes."
           additionalMetaTags={[
             {
               name: "keywords",
               content:
-                "Hacktoberquote, hacktoberfest, open sources programming quotes"
+                "hacktoberquote, hacktoberfest, open source, programming quotes"
             }
           ]}
         />
