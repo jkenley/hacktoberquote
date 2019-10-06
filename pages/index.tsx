@@ -28,17 +28,26 @@ const quotes = [
   }
 ];
 
-function randomQuote() {
+function getRandomQuote() {
   return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
-const Home: NextPage = () => {
-  const [quote, setQuote] = useState(randomQuote());
+function twitterShareUrl(text: string, url: string): string {
+  const baseUrl = "https://twitter.com/intent/tweet";
+  const textParam = "text=" + encodeURIComponent(text);
+  const urlParam = "url=" + encodeURIComponent(url);
+  const otherParams = "hashtags=hacktoberquote, hacktoberfest";
+
+  return baseUrl + "?" + textParam + "&" + urlParam + "&" + otherParams;
+}
+
+const Home: NextPage = (): JSX.Element => {
+  const [quote, setQuote] = useState(getRandomQuote());
 
   return (
     <>
       <div className="refresh">
-        <a title="Refresh" onClick={() => setQuote(randomQuote())}>
+        <a title="Refresh" onClick={() => setQuote(getRandomQuote())}>
           <i className="icofont-refresh"></i>
         </a>
       </div>
@@ -48,7 +57,7 @@ const Home: NextPage = () => {
           <div className="name">{`- ${quote.people}`}</div>
           <div className="s-twitter">
             <a
-              href={`https://twitter.com/intent/tweet?text=${quote.text}`}
+              href={twitterShareUrl(quote.text, "https://hacktoberquote.com/")}
               target="_blank"
             >
               <i className="icofont-twitter"></i>

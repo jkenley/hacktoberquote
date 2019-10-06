@@ -1,7 +1,10 @@
-import Document, { Head, Main, NextScript } from "next/document";
-import { Fragment } from "react";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
-export default class MyDocument extends Document {
+interface Props {
+  locale: "en-US";
+}
+
+export default class MyDocument extends Document<Props> {
   //   static async getInitialProps(ctx) {
   //     const isProduction = process.env.NODE_ENV === "production";
   //     const initialProps = await Document.getInitialProps(ctx);
@@ -24,7 +27,7 @@ export default class MyDocument extends Document {
     // const { isProduction } = this.props;
 
     return (
-      <html lang="en">
+      <Html lang={this.props.locale}>
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -33,7 +36,7 @@ export default class MyDocument extends Document {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap"
             rel="stylesheet"
           />
           <link rel="stylesheet" href="/static/icofont/icofont.min.css" />
@@ -43,16 +46,16 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           {false && (
-            <Fragment>
+            <>
               <script
                 async
                 src="https://www.googletagmanager.com/gtag/js?id="
               />
               {/* <script dangerouslySetInnerHTML={this.setGoogleTags()} /> */}
-            </Fragment>
+            </>
           )}
         </body>
-      </html>
+      </Html>
     );
   }
 }

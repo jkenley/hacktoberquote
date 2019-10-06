@@ -39,7 +39,7 @@ body {
 }
 
 .refresh i:hover {
-    color: #92eaff;
+    color: #fff922;
 }
 
 .container {
@@ -96,9 +96,15 @@ blockquote::after {
 .s-twitter a {
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .s-twitter i {
     color: #92eaff;
+    font-size: 30px;
+}
+
+.s-twitter i:hover {
+    color: #a31ec8;
     font-size: 30px;
 }
