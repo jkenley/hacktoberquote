@@ -1,17 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { DocumentContext } from "next";
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const { renderPage } = ctx;
-
-    const isProduction = process.env.NODE_ENV === "production";
-    const initialProps = await Document.getInitialProps(ctx);
-    const page = renderPage((App: any) => (props: any) => <App {...props} />);
-
-    return { ...initialProps, isProduction, page };
-  }
-
   setGoogleTags() {
     return {
       __html: `
@@ -44,15 +33,13 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {this.props.isProduction && (
-            <>
-              <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-149489768-1"
-              />
-              <script dangerouslySetInnerHTML={this.setGoogleTags()} />
-            </>
-          )}
+          <>
+            <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=UA-149489768-1"
+            />
+            <script dangerouslySetInnerHTML={this.setGoogleTags()} />
+          </>
         </body>
       </Html>
     );
