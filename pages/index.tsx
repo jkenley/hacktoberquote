@@ -47,9 +47,16 @@ const Home: NextPage = (): JSX.Element => {
       </div>
       <footer>
         <p>
-          Developed with ❤️ by{" "}
+          Code with ♥ by{" "}
           <a href="https://jkenley.me/" target="_blank">
             Kenley Jean
+          </a>
+          . Licensed under the{" "}
+          <a
+            href="https://github.com/bedjiken/hacktoberquote/blob/master/LICENCE"
+            target="_blank"
+          >
+            MIT License
           </a>
         </p>
       </footer>
