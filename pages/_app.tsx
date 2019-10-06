@@ -1,7 +1,7 @@
 import React from "react";
-import App, { Container } from "next/app";
-// import Router from "next/router";
+import App from "next/app";
 import { DefaultSeo } from "next-seo";
+// import Router from "next/router";
 // import { trackPageView } from "../helpers";
 
 export default class MyApp extends App {
@@ -15,7 +15,7 @@ export default class MyApp extends App {
     const { Component } = this.props;
 
     return (
-      <Container>
+      <>
         <DefaultSeo
           title="Hacktoberquote"
           description="Open source programming quotes."
@@ -28,7 +28,7 @@ export default class MyApp extends App {
           ]}
         />
         <Component />
-      </Container>
+      </>
     );
   }
 }

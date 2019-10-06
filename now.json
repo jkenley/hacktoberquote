@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "hacktoberquote",
-    "alias": "hacktoberquote",
+    "alias": "hacktoberquote.com",
     "builds": [{
         "src": "/static/*",
         "use": "@now/static"
