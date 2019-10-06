@@ -38,6 +38,11 @@ url("./fonts/icofont.woff") format("woff");
   content: "\efd1";
 }
 
+.icofont-twitter:before
+{
+  content: "\ed7a";
+}
+
 .icofont-xs
 {
   font-size: .5em;

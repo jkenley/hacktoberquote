@@ -11,7 +11,6 @@ blockquote {
     margin: 0;
 }
 
-
 html,
 body {
     width: 100%;
@@ -87,4 +86,19 @@ blockquote::after {
     text-align: center;
     color: #fff922;
 
+}
+
+.s-twitter {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.s-twitter a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.s-twitter i {
+    color: #92eaff;
+    font-size: 30px;
 }

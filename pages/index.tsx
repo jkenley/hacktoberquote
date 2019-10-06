@@ -46,6 +46,14 @@ const Home: NextPage = () => {
         <div className="quote">
           <blockquote>{quote.text}</blockquote>
           <div className="name">{`- ${quote.people}`}</div>
+          <div className="s-twitter">
+            <a
+              href={`https://twitter.com/intent/tweet?text=${quote.text}`}
+              target="_blank"
+            >
+              <i className="icofont-twitter"></i>
+            </a>
+          </div>
         </div>
       </div>
     </>
