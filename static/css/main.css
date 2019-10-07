@@ -45,6 +45,7 @@ body {
 .timer{
     margin-left: 15px;
     font-size: 20px;
+    color: #fff922;
 }
 
 .timer:hover {
