@@ -13,12 +13,18 @@ See: [https://hacktoberquote.com/](https://hacktoberquote.com/)
 
 ## Development
 
-Clone repo, then:
-
+Clone the repo:
+```bash
+$ git clone https://github.com/bedjiken/hacktoberquote.git
 ```
-yarn install
-yarn dev
-
+Install dependencies:
+```bash
+$ cd hacktoberquote
+$ yarn install
+```
+Run the project:
+```bash
+$ yarn dev
 ```
 
 ## How to contribute
