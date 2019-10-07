@@ -27,7 +27,8 @@
     "next-images": "^1.2.0",
     "next-seo": "^2.1.2",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "reading-time": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^12.7.11",

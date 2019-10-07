@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, {useEffect, useState, MouseEvent} from "react";
 import { NextPage } from "next";
 import { quotes } from "../data";
+import { useInterval } from "../hooks";
+import readingTime from "reading-time";
 
 type Quote = {
   text: string;
@@ -22,13 +24,36 @@ const twitterShareUrl = (text: string, url: string): string => {
 
 const Home: NextPage = (): JSX.Element => {
   const [quote, setQuote] = useState(getRandomQuote());
+  const [timer, setTimer] = useState(0);
+
+  useEffect(() => {
+    setTimer(readingEstimation);
+  }, [quote.text]);
+
+  useInterval(() => {
+    if (timer === 0) {
+      setQuote(getRandomQuote);
+      return;
+    }
+    setTimer(timer - 1);
+  }, 1000);
+
+  const readingEstimation = (): number => {
+      const { time } = readingTime(quote.text);
+      return Math.round(time / 1000);
+  };
+
+  const handleRefresh = (): void => {
+      setQuote(getRandomQuote());
+  };
 
   return (
     <>
       <div className="refresh">
-        <a title="Refresh" onClick={() => setQuote(getRandomQuote())}>
-          <i className="icofont-refresh"></i>
+        <a title="Refresh" onClick={handleRefresh}>
+          <i className="icofont-refresh"/>
         </a>
+        <p className="timer">{timer}</p>
       </div>
       <div className="container">
         <div className="quote">
@@ -40,7 +65,7 @@ const Home: NextPage = (): JSX.Element => {
               href={twitterShareUrl(quote.text, "https://hacktoberquote.com/")}
               target="_blank"
             >
-              <i className="icofont-twitter"></i>
+              <i className="icofont-twitter"/>
             </a>
           </div>
         </div>
