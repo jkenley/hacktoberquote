@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { NextPage } from "next";
 import { quotes } from "../data";
+import { useInterval } from "../hooks";
 
 type Quote = {
   text: string;
@@ -22,13 +23,23 @@ const twitterShareUrl = (text: string, url: string): string => {
 
 const Home: NextPage = (): JSX.Element => {
   const [quote, setQuote] = useState(getRandomQuote());
+  const [timer, setTimer] = useState(0);
+
+  useEffect(() => {
+    // setTimer(5);
+  }, []);
+
+  useInterval(() => {
+    setTimer(timer - 1);
+  }, 1000);
 
   return (
     <>
       <div className="refresh">
         <a title="Refresh" onClick={() => setQuote(getRandomQuote())}>
-          <i className="icofont-refresh"></i>
+          <i className="icofont-refresh"/>
         </a>
+        <p className="timer">{timer}</p>
       </div>
       <div className="container">
         <div className="quote">
