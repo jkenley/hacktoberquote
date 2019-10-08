@@ -36,7 +36,7 @@ const Home: NextPage = (): JSX.Element => {
           <div className="name">{`- ${quote.people}`}</div>
           <div className="s-twitter">
             <a
-              title="Share on twitter"
+              title="Share on Twitter"
               href={twitterShareUrl(quote.text, "https://hacktoberquote.com/")}
               target="_blank"
             >

@@ -19,8 +19,23 @@ export const quotes = [
   },
   {
     text:
+      "Once GNU is written, everyone will be able to obtain good system software free, just like air.",
+    people: "Richard M. Stallman"
+  },
+  {
+    text:
       "I based my entire career on collaboration- there is nothing better than succeeding with a team.",
     people: "Juan Veloz"
+  },
+  {
+    text:
+      "Control over the use of one's ideas really constitutes control over other people's lives; and it is usually used to make their lives more difficult.",
+    people: "Richard M. Stallman"
+  },
+  {
+    text:
+      "It just makes it even harder for people to even approach the (open source) side, when they then end up having to worry about ... public humiliation.",
+    people: "Linus Torvalds"
   },
   {
     text:
@@ -65,6 +80,11 @@ export const quotes = [
   },
   {
     text:
+      "Free software' is a matter of liberty, not price. To understand the concept, you should think of 'free' as in 'free speech,' not as in 'free beer",
+    people: "Richard M. Stallman"
+  },
+  {
+    text:
       "Many ideas grow better when transplanted into another mind than the one where they sprang up.",
     people: "Oliver Wendell Holmes"
   },
@@ -84,8 +104,18 @@ export const quotes = [
   },
   {
     text:
+      "Anybody who tells me I can't use a program because it's not open source, go suck on rms. I'm not interested. 99% of that I run tends to be open source, but that's _my_ choice, dammit.",
+    people: "Linus Torvalds"
+  },
+  {
+    text:
       "No one can whistle a symphony. It takes a whole orchestra to play it.",
     people: "H.E. Luccock"
+  },
+  {
+    text:
+      "I'm doing a free operating system just a hobby, won't be big and professional like gnu for 386 (486) AT clones.",
+    people: "Linus Torvalds"
   },
   {
     text:
@@ -119,6 +149,11 @@ export const quotes = [
   },
   {
     text:
+      "When it comes to software, I much prefer free software, because I have very seldom seen a program that has worked well enough for my needs, and having sources available can be a life-saver",
+    people: "Linus Torvalds"
+  },
+  {
+    text:
       "If everyone is moving forward together, then success takes care of itself.",
     people: "Henry Ford"
   },
@@ -126,5 +161,10 @@ export const quotes = [
     text:
       "No matter how brilliant your mind or strategy, if you're playing a solo game, you'll always lose out to a team.",
     people: "Reid Hoffman"
+  },
+  {
+    text:
+      "If you focus your mind on the freedom and community that you can build by staying firm, you will find the strength to do it.",
+    people: "Richard M. Stallman"
   }
 ];
