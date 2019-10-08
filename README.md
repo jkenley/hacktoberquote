@@ -1,6 +1,6 @@
 <p align="center">
  <h1 align="center">HacktoberQuote</h1>
-<img align="center" src="https://github.com/bedjiken/hacktoberquote/blob/master/HacktoberQuote_preview.png">
+<img align="center" src="https://github.com/bedjiken/hacktoberquote/blob/master/hacktoberquote_preview.png">
 </p>
 
 **Quotes about open source software and team collaboration. This site was built with NextJS, Typescript. It is hosted on Zeit and the source code is on GitHub.**
