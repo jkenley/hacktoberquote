@@ -1,8 +1,8 @@
-import React, {useEffect, useState, MouseEvent} from "react";
+import React, { useEffect, useState } from "react";
+import readingTime from "reading-time";
 import { NextPage } from "next";
 import { quotes } from "../data";
 import { useInterval } from "../hooks";
-import readingTime from "reading-time";
 
 type Quote = {
   text: string;
@@ -39,21 +39,21 @@ const Home: NextPage = (): JSX.Element => {
   }, 1000);
 
   const readingEstimation = (): number => {
-      const { time } = readingTime(quote.text);
-      return Math.round(time / 1000);
+    const { time } = readingTime(quote.text);
+    return Math.round(time / 1000);
   };
 
   const handleRefresh = (): void => {
-      setQuote(getRandomQuote());
+    setQuote(getRandomQuote());
   };
 
   return (
     <>
       <div className="refresh">
         <a title="Refresh" onClick={handleRefresh}>
-          <i className="icofont-refresh"/>
+          <i className="icofont-refresh" />
         </a>
-        <p className="timer">{timer}</p>
+        <p className="timer">{`Quote ends in ${timer} sec`}</p>
       </div>
       <div className="container">
         <div className="quote">
@@ -65,7 +65,7 @@ const Home: NextPage = (): JSX.Element => {
               href={twitterShareUrl(quote.text, "https://hacktoberquote.com/")}
               target="_blank"
             >
-              <i className="icofont-twitter"/>
+              <i className="icofont-twitter" />
             </a>
           </div>
         </div>

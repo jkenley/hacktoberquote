@@ -1,8 +1,6 @@
 <p align="center">
  <h1 align="center">HacktoberQuote</h1>
-
 <img align="center"  src="https://github.com/ThalKod/hacktoberquote/blob/feature/dynamic_quote_timer/HacktoberQuote_preview.png">
- Sharing programming quotes about open source and team collaboration.
 </p>
 
 **Quotes about open source software and team collaboration. This site was built with NextJS, Typescript. It is hosted on Zeit and the source code is on GitHub.**

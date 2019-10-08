@@ -27,8 +27,8 @@ body {
 
 .refresh {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 30px;
+    left: 30px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -42,9 +42,11 @@ body {
     color: #fff922
 }
 
-.timer{
+.timer {
+    font-family: 'Montserrat', sans-serif;
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 14px;
+    font-style: italic;
     color: #fff922;
 }
 
@@ -63,7 +65,7 @@ body {
 }
 
 blockquote {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     padding: 10px;
     font-size: 2rem;
@@ -88,7 +90,7 @@ blockquote::after {
 
 .name {
     margin-top: 1rem;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
@@ -117,7 +119,7 @@ blockquote::after {
 }
 
 footer {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     position: fixed;
     bottom: 10px;
     width: 100%;
