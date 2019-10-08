@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Ignore .idea files
+.idea/
+
 # Logs
 logs
 *.log
