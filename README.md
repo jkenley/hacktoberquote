@@ -1,8 +1,8 @@
 # Hacktoberquote
 
-## Open source programming quotes and team collaboration.
+## Quotes about open source software and team collaboration.
 
-**Programming quotes about open source. This site was built with NextJS, Typescript. It is hosted on Zeit and the source code is on GitHub.**
+**Quotes about open source software and team collaboration. This site was built with NextJS, Typescript. It is hosted on Zeit and the source code is on GitHub.**
 
 See: [https://hacktoberquote.com/](https://hacktoberquote.com/)
 
@@ -20,7 +20,7 @@ yarn dev
 
 Features that are planned:
 
-* Allow anyone to submit quotes about open sources and team collaboration.
+* Allow anyone to submit quotes about open sources software and team collaboration.
 
 ## How to contribute
 
