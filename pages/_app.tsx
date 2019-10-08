@@ -9,13 +9,13 @@ export default class MyApp extends App {
     return (
       <>
         <DefaultSeo
-          title="Hacktoberquote - Open source programming quotes"
-          description="Open source programming quotes."
+          title="Hacktoberquote - Quotes about open source software and team collaboration."
+          description="Quotes about open source software and team collaboration."
           additionalMetaTags={[
             {
               name: "keywords",
               content:
-                "hacktoberquote, hacktoberfest, open source, programming quotes"
+                "hacktoberquote, hacktoberfest, open source software quotes, team collaboration quotes"
             }
           ]}
         />

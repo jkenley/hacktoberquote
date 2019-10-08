@@ -1,18 +1,26 @@
 {
   "name": "hacktoberquote",
   "version": "1.0.0",
-  "homepage": "https://hacktoberquote.com",
-  "repository": "https://github.com/bedjiken/hacktoberquote.git",
-  "description": "Open source programming quotes.",
+  "description": "Open source programming quotes & team collaboration.",
+  "homepage": "https://hacktoberquote.com/",
+  "subdomain": "hacktoberquote",
   "main": "pages/index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bedjiken/hacktoberquote.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bedjiken/hacktoberquote.git/issues"
+  },
   "author": {
     "name": "Kenley Jean",
     "email": "kenley.jean@esih.edu",
-    "url": "https://jkenley.me"
+    "web": "https://jkenley.me"
   },
   "keywords": [
-    "open source",
-    "programming quotes",
+    "open-source",
+    "team-collaboration",
+    "programming-quotes",
     "hacktoberfest",
     "hacktoberquote"
   ],
