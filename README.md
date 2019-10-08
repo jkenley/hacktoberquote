@@ -1,7 +1,5 @@
 # Hacktoberquote
 
-## Quotes about open source software and team collaboration.
-
 **Quotes about open source software and team collaboration. This site was built with NextJS, Typescript. It is hosted on Zeit and the source code is on GitHub.**
 
 See: [https://hacktoberquote.com/](https://hacktoberquote.com/)
