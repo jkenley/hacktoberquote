@@ -166,5 +166,10 @@ export const quotes = [
     text:
       "If you focus your mind on the freedom and community that you can build by staying firm, you will find the strength to do it.",
     people: "Richard M. Stallman"
+  },
+  {
+    text:
+      "Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles must begin with a single step.",
+    people: "Lao Tzu"
   }
 ];
