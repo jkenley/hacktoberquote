@@ -7,6 +7,7 @@ import { useInterval } from "../hooks";
 type Quote = {
   text: string;
   people: string;
+  url: string;
 };
 
 const getRandomQuote = (): Quote => {
@@ -47,6 +48,7 @@ const Home: NextPage = (): JSX.Element => {
     setQuote(getRandomQuote());
   };
 
+  const url = '';
   return (
     <>
       <div className="refresh">
@@ -58,7 +60,7 @@ const Home: NextPage = (): JSX.Element => {
       <div className="container">
         <div className="quote">
           <blockquote>{quote.text}</blockquote>
-          <div className="name">{`- ${quote.people}`}</div>
+          <div className="name"><a target="_blank" href={quote.url}>{`- ${quote.people}`}</a></div>
           <div className="s-twitter">
             <a
               title="Share on Twitter"
