@@ -166,5 +166,9 @@ export const quotes = [
     text:
       "If you focus your mind on the freedom and community that you can build by staying firm, you will find the strength to do it.",
     people: "Richard M. Stallman"
+  },
+  {
+    text:
+      "A journey of a thousand miles begins with a single step.", "Laozi"
   }
 ];
