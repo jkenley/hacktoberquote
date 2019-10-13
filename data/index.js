@@ -5,6 +5,11 @@ export const quotes = [
     people: "Linus Torvald"
   },
   {
+text:
+"Success is not a miracle. Nor is it a matter of luck. Everything happens for a reason, good or bad, positive or negative.",people:
+"Brian Tracy"
+},
+  {
     text: "Alone we can do so little; together we can do so much.",
     people: "Helen Keller"
   },
