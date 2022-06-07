@@ -15,21 +15,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en-US">
-        <Head>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
-          <link rel="shortcut icon" href="/static/images/icon-48x48.png" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="stylesheet" href="/static/icofont/icofont.min.css" />
-          <link rel="stylesheet" href="/static/css/main.css" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

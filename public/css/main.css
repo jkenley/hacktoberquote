@@ -144,25 +144,21 @@ footer a:hover {
     blockquote {
         font-size: 1rem
     }
-
     blockquote::before {
         font-size: 20px;
         content: "\201C";
         position: relative;
         left: -.5%
     }
-
     blockquote::after {
         font-size: 20px;
         content: "\201D";
         position: relative;
         left: .5%
     }
-
     .name {
         font-size: 1rem
     }
-
     .s-twitter i {
         font-size: 20px
     }
