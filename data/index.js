@@ -12,6 +12,14 @@ export const quotes = [
     text: "The secret is to work less as individuals and more as a team",
     people: "Knute Rockne"
   },
+  
+{
+    text:
+ "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+
+      people:                                             
+       "Winston S. Churchill"
+},
   {
     text:
       "My own personal dream is that the majority of the web runs on open source software.",
