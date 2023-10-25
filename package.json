@@ -30,7 +30,7 @@
         "start": "next start"
     },
     "dependencies": {
-        "next": "^12.1.6",
+        "next": "^13.5.0",
         "next-seo": "^5.4.0",
         "react": "^16.10.2",
         "react-dom": "^16.10.2",
